@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
 #background {
   background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: #E0E8FF;
   height: 100vh;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,10 +23,9 @@
   background-color: white;
   min-width: 30vh;
   max-width: 35vh;
-}
-
-#card #image {
-  width: 100% auto;
+  padding: 0 2.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 #text_align {
@@ -30,13 +35,62 @@
   align-items: center;
   min-width: 25vh;
   max-width: 30vh;
+  text-align: center;
+}
+
+#image img {
+  min-width: 30vh;
+  max-width: 35vh;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 #payment_plan {
   display: flex;
+  align-items: center;
+  background-color: #F0F4F4;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  min-width: 25vh;
+  max-width: 30vh;
 }
 
 #plan_name {
   display: flex;
   flex-direction: column;
+  padding: 0.5rem 0.5rem;
+  text-align: start;
+  font-size: 0.65em;
+  width: 60%;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 1rem 0;
+  font-weight: 900;
+}
+
+#par_1 {
+  color: #929292;
+  font-size: 0.8em;
+  margin: 1rem 0;
+}
+
+#change a{
+  font-size: 0.75em;
+}
+
+#image_2 {
+  width: 20%;
+  padding: 0.5rem 0.5rem;
+}
+
+#image_2 img{
+width: 40px;
+}
+
+#change {
+  width: 20%;
+  /* padding-right: 2rem; */
 }
