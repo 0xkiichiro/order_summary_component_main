@@ -23,9 +23,11 @@ body {
   background-color: white;
   min-width: 30vh;
   max-width: 35vh;
-  padding: 0 2.5rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  /* padding: 0 2.5rem; */
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #text_align {
@@ -39,10 +41,9 @@ body {
 }
 
 #image img {
-  min-width: 30vh;
-  max-width: 35vh;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  width: 100%;
 }
 
 #payment_plan {
@@ -51,8 +52,8 @@ body {
   background-color: #F0F4F4;
   border-radius: 1rem;
   margin: 1rem 0;
-  min-width: 25vh;
-  max-width: 30vh;
+  padding: 0.5rem 0;
+  width: 100%;
 }
 
 #plan_name {
@@ -92,5 +93,43 @@ width: 40px;
 
 #change {
   width: 20%;
-  /* padding-right: 2rem; */
+  margin-right: 0.5rem;
+}
+
+#change a {
+  text-decoration: none;
+}
+
+#button {
+  background-color: hsl(224, 100%, 36%);
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  padding: .5rem 0;
+  margin: 2rem 0;
+  width: 100%;
+  border-radius: .5rem;
+  border: none;
+
+  box-shadow: 0 1rem 2rem rgb(102, 101, 101);
+}
+
+#cancel {
+  margin-bottom: 4rem;
+}
+
+#cancel a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: hsl(258, 100%, 36%);
+}
+
+#change:hover {
+  text-decoration: underline;
 }
